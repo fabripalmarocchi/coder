@@ -1,9 +1,16 @@
-alert("vamos de compras\nque quieres comprar?");
+//construtora
+function Producto(nombre, precio, img, id) {
+    this.nombre = nombre;
+    this.precio = parseInt(precio);
+    this.img = img;
+    this.id = id;
+}
 
-const zapatilla = "Zapatillas"
-const campera = "Campera"
-const remera = "Remera"
-const gorra = "Gorra"
+const zapatilla = new Producto("Zapatilla", 25000, "../img/zapatillas cara.jpg", "zapatilla");
+const remera = new Producto("Remera", 12000, "../img/remera-negra.jpg", "remera");
+const jeans = new Producto("Jeans", 20000, "../img/jeans.jpg", "jeans");
+const top = new Producto("Campera", 16000, "../img/campera de jeans.jpg", "campera");
+const blazer = new Producto("Blazer", 25000, "../img/blazer rosa.jpg", "blazer");
 
 let opcion = parseInt(prompt("Selecciona una opción para agregar al carrito\n1.Zapatilla\n2.campera\n3.remera\n4.gorra\n5.salir"));
 let opcion2;
